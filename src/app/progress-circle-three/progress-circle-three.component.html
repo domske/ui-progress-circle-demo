@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <ui-progress-circle
+    class="back"
+    value="100"
+    [color]="color"
+    stroke="100"
+  ></ui-progress-circle>
+  <ui-progress-circle
+    class="progress"
+    [value]="value"
+    [color]="color"
+    stroke="100"
+  ></ui-progress-circle>
+</div>
+<div class="value">
+  <ng-content></ng-content>
+</div>

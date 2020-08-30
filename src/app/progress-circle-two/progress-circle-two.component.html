@@ -1,0 +1,17 @@
+<div class="container" (click)="ngOnInit()">
+  <ui-progress-circle
+    value="100"
+    color="#222222"
+    stroke="8"
+    radius="96"
+  ></ui-progress-circle>
+  <ui-progress-circle
+    [color]="getColor()"
+    stroke="16"
+    [value]="progress"
+  ></ui-progress-circle>
+  <div class="inner" [ngClass]="getColor()">
+    <div class="value">{{ progress | number: "1.0-0" }}</div>
+    <div class="unit">%</div>
+  </div>
+</div>
