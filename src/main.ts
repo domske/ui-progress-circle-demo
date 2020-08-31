@@ -5,6 +5,7 @@ import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import { defineCustomElements } from 'ui-progress-circle/loader';
+// import { defineCustomElements } from '../temp/ui-progress-circle/loader';
 
 if (environment.production) {
   enableProdMode();

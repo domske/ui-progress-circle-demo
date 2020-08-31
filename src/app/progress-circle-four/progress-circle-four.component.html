@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <div class="gauge">
+    <ui-progress-circle
+      class="back danger"
+      value="10"
+      color="danger"
+      stroke="30"
+    ></ui-progress-circle>
+    <ui-progress-circle
+      class="back warning"
+      value="10"
+      color="warning"
+      stroke="30"
+    ></ui-progress-circle>
+    <ui-progress-circle
+      class="back success"
+      value="30"
+      color="success"
+      stroke="30"
+    ></ui-progress-circle>
+    <ui-progress-circle
+      class="progress no-animation"
+      [value]="value / 2"
+      [color]="getColor()"
+      stroke="30"
+    ></ui-progress-circle>
+  </div>
+  <div class="value">{{ value | number: "1.0-0" }}%</div>
+</div>

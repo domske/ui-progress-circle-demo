@@ -7,33 +7,51 @@
 </header>
 
 <main>
-  <section>
+  <section hidden>
     <h4>Loading</h4>
     <div class="container">
       <app-progress-circle-one></app-progress-circle-one>
     </div>
   </section>
 
-  <section>
+  <section hidden>
     <h4>Overlapping</h4>
     <div class="container">
       <app-progress-circle-two></app-progress-circle-two>
     </div>
   </section>
 
-  <section>
+  <section hidden>
     <h4>Analytics</h4>
     <div class="container">
       <div class="flex-row">
-        <app-progress-circle-three value="33" color="danger"
-          >1230 €</app-progress-circle-three
-        >
-        <app-progress-circle-three value="66" color="success"
-          >326 User</app-progress-circle-three
-        >
-        <app-progress-circle-three value="42" color="warning"
-          >42h</app-progress-circle-three
-        >
+        <app-progress-circle-three value="33" color="danger">
+          1230 €
+        </app-progress-circle-three>
+        <app-progress-circle-three value="66" color="success">
+          326 User
+        </app-progress-circle-three>
+        <app-progress-circle-three value="42" color="warning">
+          42h
+        </app-progress-circle-three>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h4>Gauge</h4>
+    <div class="container">
+      <div class="flex-column">
+        <app-progress-circle-four
+          [value]="gaugeValue"
+        ></app-progress-circle-four>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          style="margin-top: 10px"
+          [(ngModel)]="gaugeValue"
+        />
       </div>
     </div>
   </section>

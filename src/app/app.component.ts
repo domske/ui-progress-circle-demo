@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'progress-circle-demo';
+  gaugeValue = 33;
 }
