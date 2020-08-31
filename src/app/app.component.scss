@@ -51,7 +51,7 @@ footer {
   background-color: #1d1d1d;
   text-align: center;
   font-size: 0.8em;
-  color: #878787;
+  opacity: 0.67;
 }
 
 .spacer {
@@ -91,5 +91,11 @@ a {
 
 .info {
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.67;
+}
+
+.hint {
+  display: inline-block;
+  margin-top: 10px !important;
+  opacity: 0.33;
 }

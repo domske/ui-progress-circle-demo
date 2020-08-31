@@ -1,14 +1,14 @@
 :host {
-  width: 120px;
-  height: 60px;
+  width: 200px;
+  height: 100px;
   overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   > * {
     position: absolute;
   }
@@ -44,4 +44,5 @@
   bottom: 50%;
   width: 100%;
   opacity: 0.5;
+  font-size: 2em;
 }

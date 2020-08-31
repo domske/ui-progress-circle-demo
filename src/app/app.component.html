@@ -17,7 +17,10 @@
   <section>
     <h4>Overlapping</h4>
     <div class="container">
-      <app-progress-circle-two></app-progress-circle-two>
+      <div class="flex-column">
+        <app-progress-circle-two></app-progress-circle-two>
+        <span class="hint">Click me!</span>
+      </div>
     </div>
   </section>
 
@@ -49,9 +52,10 @@
           type="range"
           min="0"
           max="100"
-          style="margin-top: 10px"
+          style="width: 200px; margin-top: 10px"
           [(ngModel)]="gaugeValue"
         />
+        <span class="hint">Drag me!</span>
       </div>
     </div>
   </section>
@@ -59,8 +63,11 @@
   <section>
     <h4>More Examples Planned</h4>
     <div class="container info">
-      Feel free to make some pull requests
-      <a href="https://github.com/domske/ui-progress-circle-demo/">here.</a>
+      <a href="https://github.com/domske/ui-progress-circle-demo/">
+        Source Code
+      </a>
+      of this demo page.<br />
+      Feel free to add more examples.
     </div>
   </section>
 </main>
