@@ -1,7 +1,8 @@
 <header>
   <div class="title">Progress Circle</div>
   <div class="spacer"></div>
-  <a class="button" href="https://www.npmjs.com/package/ui-progress-circle">
+  <button class="button" (click)="toggleLightMode()">☀</button>
+  <a class="button info" href="https://www.npmjs.com/package/ui-progress-circle">
     Getting Started
   </a>
 </header>
@@ -19,7 +20,7 @@
     <div class="container">
       <div class="flex-column">
         <app-progress-circle-two></app-progress-circle-two>
-        <span class="hint">Click me!</span>
+        <span class="hint-text">Click me!</span>
       </div>
     </div>
   </section>
@@ -55,14 +56,14 @@
           style="width: 200px; margin-top: 10px"
           [(ngModel)]="gaugeValue"
         />
-        <span class="hint">Drag me!</span>
+        <span class="hint-text">Drag me!</span>
       </div>
     </div>
   </section>
 
   <section>
     <h4>More Examples Planned</h4>
-    <div class="container info">
+    <div class="container info-text">
       <a href="https://github.com/domske/ui-progress-circle-demo/">
         Source Code
       </a>

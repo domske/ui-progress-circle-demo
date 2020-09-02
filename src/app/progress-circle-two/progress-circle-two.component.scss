@@ -15,16 +15,16 @@
 .inner {
   width: 120px;
   height: 120px;
-  background-color: #222222;
+  background-color: var(--app-background-blend-1);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
   transform: scale(1);
   transition: transform 100ms ease-out;
-  box-shadow: 0 0 10px rgba(black, 0.5);
   &:hover {
     transform: scale(1.12);
+    box-shadow: 0 0 10px rgba(black, 0.5);
   }
   &.success {
     background-color: #27ae60;
@@ -48,4 +48,7 @@
 }
 .unit {
   margin-left: 0.5em;
+}
+.back {
+  color: var(--app-background-blend-1);
 }

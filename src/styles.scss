@@ -1,3 +1,19 @@
+body {
+  --app-background: #111111;
+  --app-background-contrast: #eeeeee;
+  --app-background-blend-1: #222222;
+  --app-background-blend-2: #333333;
+  --app-background-blend-3: #444444;
+}
+
+body.light {
+  --app-background: #ffffff;
+  --app-background-contrast: #000000;
+  --app-background-blend-1: #dddddd;
+  --app-background-blend-2: #bbbbbb;
+  --app-background-blend-3: #999999;
+}
+
 html,
 body {
   width: 100%;
@@ -12,6 +28,7 @@ body {
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-webkit-scrollbar {
@@ -19,22 +36,22 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #222;
+  background: var(--app-background-blend-1);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: var(--app-background-blend-2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: var(--app-background-blend-3);
 }
 
 input[type="range"] {
   -webkit-appearance: none;
   width: 100%;
   height: 20px;
-  background: #222;
+  background: var(--app-background-blend-1);
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
